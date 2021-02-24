@@ -6,7 +6,7 @@ namespace PrimeSifting.Models
   {
     public static List<int> GetPrimes()
     {
-      List<int> Primes = new List<int> { 1, 2 };
+      List<int> Primes = new List<int> { };
       return Primes;
     }
   }
