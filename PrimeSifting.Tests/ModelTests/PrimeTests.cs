@@ -8,13 +8,20 @@ namespace PrimeSifting.Tests
   public class PrimeTests
   {
     [TestMethod]
-    public void GetPrimes_ReturnsEmptyList_IntList()
+    public void GetPrimes_ReturnsSingleItemList_IntList()
     {
-      List<int> newList = new List<int> { };
-      List<int> result = Prime.GetPrimes();
+      List<int> newList = new List<int> { 1 };
+      List<int> result = Prime.GetPrimes(1);
       CollectionAssert.AreEqual(newList, result);
     }
 
+    [TestMethod]
+    public void GetPrimes_AddNumbersUpToInputToList_IntList()
+    {
+      List<int> newList = new List<int> { 1, 2, 3, 4, 5 };
+      List<int> result = Prime.GetPrimes(5);
+      CollectionAssert.AreEqual(newList, result);
+    }
     // [TestMethod]
     // public void GetPrimes_OneIsNotPrime_ExpectedReturnValue()
     // {

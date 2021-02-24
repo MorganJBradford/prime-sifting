@@ -4,9 +4,9 @@ namespace PrimeSifting.Models
 {
   public class Prime
   {
-    public static List<int> GetPrimes()
+    public static List<int> GetPrimes(int userNumber)
     {
-      List<int> Primes = new List<int> { };
+      List<int> Primes = new List<int> { userNumber };
       return Primes;
     }
   }
