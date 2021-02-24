@@ -22,12 +22,26 @@ namespace PrimeSifting.Tests
       List<int> result = Prime.GetPrimes(5);
       CollectionAssert.AreEqual(newList, result);
     }
-    // [TestMethod]
-    // public void GetPrimes_OneIsNotPrime_ExpectedReturnValue()
-    // {
-    //   any necessary logic to prep for test; instantiating new classes, etc.
-    //   Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
-    //   Assert.AreEqual(true, testLeapYear.IsLeapYear(2000));
-    // }
+
+    [TestMethod]
+    public void GetPrimes_FilterPrimeNumbersFromList_IntList()
+    {
+      List<int> newList = new List<int> { 2, 3, 5, 7 };
+      List<int> result = Prime.GetPrimes(10);
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
+
+
+
+
+// starting list 6
+
+// prime list 2 3
+
+// if (index % primelist == 0)
+// restart loop with next index
+
+// else
+// primelist.add index
