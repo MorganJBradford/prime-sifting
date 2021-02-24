@@ -10,15 +10,15 @@ namespace PrimeSifting.Tests
     [TestMethod]
     public void GetPrimes_ReturnsSingleItemList_IntList()
     {
-      List<int> newList = new List<int> { 1 };
-      List<int> result = Prime.GetPrimes(1);
+      List<int> newList = new List<int> { 2 };
+      List<int> result = Prime.GetPrimes(2);
       CollectionAssert.AreEqual(newList, result);
     }
 
     [TestMethod]
     public void GetPrimes_AddNumbersUpToInputToList_IntList()
     {
-      List<int> newList = new List<int> { 1, 2, 3, 4, 5 };
+      List<int> newList = new List<int> { 2, 3, 4, 5 };
       List<int> result = Prime.GetPrimes(5);
       CollectionAssert.AreEqual(newList, result);
     }
